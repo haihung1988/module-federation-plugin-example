@@ -6,19 +6,11 @@ import { HealthContentSeeAllPagesComponent } from './features/health-content/pag
 import { MedicalCardDetailsPagesComponent } from './features/medical-cards/pages/medical-card-details-pages/medical-card-details-pages.component';
 import { VasDetailsPagesComponent } from './features/vas/pages/vas-details-pages/vas-details-pages.component';
 
-export const routes: Routes = [
-  // {
-  //   path: '',
-  //   pathMatch: 'full',
-  //   redirectTo: ROUTES_CONFIG.HEALTH
-  // },
-  // {
-  //   path: ROUTES_CONFIG.HEALTH_CONTENT,
-  //   loadChildren: () => import('health-content').then((m) => m.HealthContentModule)
-  // },
+export const APP_ROUTES: Routes = [
   {
     path: '',
-    component: HealthTabComponent
+    component: HealthTabComponent,
+    pathMatch: 'full'
   },
   {
     path: ROUTES_CONFIG.HEALTH_CONTENT_DETAILS,
@@ -37,3 +29,12 @@ export const routes: Routes = [
     component: VasDetailsPagesComponent
   }
 ];
+
+
+// import { Routes } from '@angular/router';
+// import { HomeComponent } from './home/home.component';
+
+// export const APP_ROUTES: Routes = [
+//     { path: '', component: HealthTabComponent, pathMatch: 'full'}
+// ];
+

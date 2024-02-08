@@ -9,10 +9,10 @@ import { PromoBannerComponent } from './features/promo-banner/promo-banner.compo
 import { CdsLangPipe } from '@cds/ng-core/lang';
 @Component({
   selector: 'mv-app-root',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet, IonicModule, CdsIonBottomBarModule, CdsButtonModule],
+  // standalone: true,
+  // imports: [],
   providers: [HealthContentComponent, PromoBannerComponent, CdsLangPipe],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  // schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
