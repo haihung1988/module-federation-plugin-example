@@ -12,10 +12,15 @@ export const APP_ROUTES: Routes = [
 
     // Your route here:
 
-    // {
-    //   path: 'flights',
-    //   loadChildren: () => import('mfe1/Module').then(m => m.FlightsModule)
-    // },
+    {
+      path: 'flights1',
+      loadChildren: () => import('mfe1/Module').then(m => m.FlightsModule)
+    },
+
+    {
+      path: 'flights2',
+      loadChildren: () => import('mfe2/Module').then(m => m.FlightsModule)
+    },
 
     {
       path: '**',
