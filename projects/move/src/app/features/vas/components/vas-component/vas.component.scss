@@ -1,0 +1,22 @@
+.vas {
+  background-color: var(--cds-bg-item);
+  margin-top: 20px;
+
+  .title {
+    margin-left: 20px;
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+      padding-right: 20px;
+    }
+  }
+  .cards {
+    margin-left: 20px;
+    .vas-item {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}

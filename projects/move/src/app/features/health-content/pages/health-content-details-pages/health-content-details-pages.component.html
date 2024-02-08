@@ -1,0 +1,12 @@
+<div class="health-content-details-pages">
+  <cds-ion-top-bar class="top-bar">
+    <cds-ion-top-bar-title>Health content</cds-ion-top-bar-title>
+    <cds-ion-top-bar-left>
+      <cds-ion-icon [icon]="'arrow:left'" (click)="onBack()"></cds-ion-icon>
+    </cds-ion-top-bar-left>
+    <cds-ion-top-bar-right>
+      <cds-ion-icon [icon]="'form:search'"></cds-ion-icon>
+    </cds-ion-top-bar-right>
+  </cds-ion-top-bar>
+  <iframe #myFrame width="100%" height="100%" frameBorder="0" [src]="urlSafe"></iframe>
+</div>

@@ -1,0 +1,27 @@
+.health-content-item-container {
+  margin-right: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 180px;
+
+  img {
+    width: 80px;
+    height: 90px;
+  }
+
+  .card-title {
+    margin-left: var(--cds-spacing-04);
+    padding-top: var(--cds-spacing-04);
+    font-weight: 600;
+  }
+
+  .card-time-to-read {
+    margin-left: var(--cds-spacing-04);
+    margin-bottom: 0.5rem;
+  }
+
+  .card-date {
+    margin-left: var(--cds-spacing-04);
+    font-size: small;
+    margin-bottom: var(--cds-spacing-04);
+  }
+}

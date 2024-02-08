@@ -1,0 +1,16 @@
+<div class="health-content">
+  <div class="title">
+    <p class="left"><b>Health content</b></p>
+    <cds-link class="right" [config]="seeAllLinkConfig" (click)="onSeeAllClick()"></cds-link>
+  </div>
+  <div>
+    <swiper-container class="cards" initial-slide="0" slides-per-view="2.2">
+      <ng-container *ngFor="let healthContent of healthContentList">
+        <swiper-slide>
+          <mv-health-content-item class="health-content-item" [item]="healthContent"
+            (click)="onHealthItemClick($event, healthContent)"></mv-health-content-item>
+        </swiper-slide>
+      </ng-container>
+    </swiper-container>
+  </div>
+</div>

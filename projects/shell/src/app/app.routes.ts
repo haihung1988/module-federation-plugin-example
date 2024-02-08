@@ -23,6 +23,11 @@ export const APP_ROUTES: Routes = [
     },
 
     {
+      path: 'move',
+      loadComponent: () => import('move/Component').then(m => m.AppComponent)
+    },
+
+    {
       path: '**',
       component: NotFoundComponent
     }

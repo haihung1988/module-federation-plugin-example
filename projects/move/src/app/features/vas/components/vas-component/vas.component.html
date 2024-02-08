@@ -1,0 +1,12 @@
+<div class="vas">
+  <div class="title">
+    <p class="left"><b>My benefits</b></p>
+  </div>
+  <swiper-container class="cards" initial-slide="0" slides-per-view="2.2">
+    <ng-container *ngFor="let vas of vasList">
+      <swiper-slide>
+        <mv-vas-item class="vas-item" [item]="vas" (click)="onItemClick($event, vas)"></mv-vas-item>
+      </swiper-slide>
+    </ng-container>
+  </swiper-container>
+</div>

@@ -1,0 +1,17 @@
+<div class="medical-card">
+  <div class="title">
+    <mv-caption class="left" [fieldId]="'medicalCardsTitle'"></mv-caption>
+    <cds-link class="right" [config]="seeAllLinkConfig"></cds-link>
+  </div>
+  <swiper-container class="cards" initial-slide="0" slides-per-view="1" pagination-clickable="true">
+    <ng-container *ngFor="let medicalCard of medicalCardList">
+      <swiper-slide>
+        <div class="medical-card-item">
+          <img [src]="medicalCard.cardImageUrl" (click)="onItemClick($event, medicalCard)" />
+          <!-- <cds-button class="download" [style]="'tertiary'" (click)="downloadMedicalCard(medicalCard.cardImageUrl)"
+            [label]="'downloadMedicalCard'"></cds-button> -->
+        </div>
+      </swiper-slide>
+    </ng-container>
+  </swiper-container>
+</div>

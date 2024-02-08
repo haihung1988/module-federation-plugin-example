@@ -1,0 +1,25 @@
+@use '@cds/style-dictionary/scss/breakpoint' as breakpoints;
+@import '@cds/style-dictionary/scss/grid';
+
+.vas-details-pages {
+  background-color: var(--cds-bg-page);
+  @include breakpoints.mobile {
+    background-color: var(--cds-bg-page);
+  }
+  @include breakpoints.tablet {
+    background-color: green;
+  }
+
+  .main {
+    margin-left: 20px;
+  }
+
+  .footer {
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}

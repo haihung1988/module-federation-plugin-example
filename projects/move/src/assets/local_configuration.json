@@ -1,0 +1,6 @@
+{
+  "desc": "Local configs",
+  "baseUrl": "test_base_url",
+  "domain": "test_domain",
+  "isAccountDeletion": true
+}

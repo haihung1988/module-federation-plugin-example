@@ -1,0 +1,24 @@
+.health-content {
+  background-color: var(--cds-bg-item);
+  margin-top: 20px;
+
+  .title {
+    margin-left: 20px;
+    height: 40px;
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+      padding-right: var(--cds-spacing-04);
+      padding-top: var(--cds-spacing-04);
+    }
+  }
+  .cards {
+    margin-left: 20px;
+    .health-content-item {
+      margin-left: var(--cds-spacing-04);
+      margin-right: var(--cds-spacing-04);
+    }
+  }
+}

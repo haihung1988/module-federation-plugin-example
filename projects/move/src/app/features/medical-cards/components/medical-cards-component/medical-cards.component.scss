@@ -1,0 +1,33 @@
+.medical-card {
+  background-color: var(--cds-bg-item);
+  margin-top: var(--cds-spacing-03);
+
+  .title {
+    padding-top: var(--cds-spacing-04);
+    .left {
+      float: left;
+      font-weight: 700;
+      padding-left: 20px;
+    }
+
+    .right {
+      float: right;
+      padding-right: 20px;
+    }
+  }
+
+  .cards {
+    // height: 270px;
+    padding-top: 40px;
+    padding-left: 20px;
+
+    .medical-card-item {
+      display: grid;
+
+      .download {
+        padding-top: 5px;
+        padding-bottom: 25px;
+      }
+    }
+  }
+}
